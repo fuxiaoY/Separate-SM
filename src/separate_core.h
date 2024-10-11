@@ -1,6 +1,9 @@
 #ifndef SEPERATE_CORE_H
 #define SEPERATE_CORE_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #define SEPARATE_CORE_VERSION "1.0.0"
 #define USE_LOOP
@@ -54,5 +57,9 @@ extern void separate_kernel_loop(SEPARATE_KERNEL* kernel) ;
 
 // Macro to run the kernel
 #define SEPARATE_RUN_KERNEL separate_kernel_loop(&kernel)
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // !SEPERATE_CORE_H
