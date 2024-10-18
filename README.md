@@ -60,14 +60,14 @@ SEPARATE_INIT_KERNEL(BusinessList,       \
 void main()
 {
     // 运行内核 
-    SEPARATE_RUN_KERNEL; 
+    SEPARATE_RUN_KERNEL(1); //是否自行管理循环 0：否 1：是
 }
   ``````
 
 
-#### 3.高度分离的业务逻辑
+### 3.高度分离的业务逻辑
 业务逻辑与状态机内核解耦，每个状态都对应一个函数，用户只需要专注于每个状态函数中的业务逻辑，即可完成状态机内核的调用。
-##### 1.简单状态机
+#### 1.简单状态机
  ``````
 void led_init()
 {
@@ -129,7 +129,7 @@ void led_on()
 
 
 
-#### 代码结构
+### 代码结构
 src
   - separate_core.h   内核头文件
   - separate_core.cpp 内核实现文件

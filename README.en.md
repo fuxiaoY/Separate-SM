@@ -61,15 +61,15 @@ In the main function, a very simple call can implement a complete state machine 
 void main()
 {
     // run kernel
-    SEPARATE_RUN_KERNEL; 
+    SEPARATE_RUN_KERNEL(1); // manage the loop 0: No 1: Yes 
 }
   ``````
 
   
-#### 3. Highly Separated Business Logic
+### 3. Highly Separated Business Logic
 Business logic is decoupled from the state machine core, with each state corresponding to a function. Users only need to focus on the business logic within each state function to invoke the state machine core.
 
-##### 1. Simple State Machine
+#### 1. Simple State Machine
  ``````
 void led_init()
 {
@@ -92,7 +92,7 @@ void led_off()
 }
 
  ``````
- ##### 1. Complex Business
+#### 2. Complex Business
 
 For more complex state business applications, implement independent business logic in each state.
  ``````
@@ -129,7 +129,7 @@ void led_on()
 }
  ``````
  
-#### Code Structure
+### Code Structure
 src
  - separate_core.h   Core header file
  - separate_core.cpp Core implementation file
