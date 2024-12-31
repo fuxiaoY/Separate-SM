@@ -38,8 +38,8 @@ ENUM_WORKSTATE WorkStat = LED_INIT;
 const static SEPARATE_STATE BusinessList[] = 
 {
     SEPARATE_DEFINE_STATE(LED_INIT, led_init),
-    SEPARATE_DEFINE_STATE(LED_INIT, led_on),
-    SEPARATE_DEFINE_STATE(LED_INIT, led_off),
+    SEPARATE_DEFINE_STATE(LED_ON, led_on),
+    SEPARATE_DEFINE_STATE(LED_OFF, led_off),
 };
 
 //默认未找到状态的回调函数（WorkStat非法值的容错处理-可选）
