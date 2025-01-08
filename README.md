@@ -132,4 +132,4 @@ void led_on()
 ### 代码结构
 src
   - separate_core.h   内核头文件
-  - separate_core.cpp 内核实现文件
+  - separate_core.c   内核实现文件

@@ -132,4 +132,4 @@ void led_on()
 ### Code Structure
 src
  - separate_core.h   Core header file
- - separate_core.cpp Core implementation file
+ - separate_core.c   Core implementation file
