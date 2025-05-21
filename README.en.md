@@ -1,5 +1,5 @@
 # Separate SM
-
+[中文](README.md) | **English** 
 ## Introduction
 A concise and independent state machine core that provides a clear code framework foundation for business logic, making it extremely suitable for complex state management in microcontroller projects. It can also be used within a single task or thread under an RTOS operating system.
 
